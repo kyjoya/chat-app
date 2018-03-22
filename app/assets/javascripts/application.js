@@ -13,6 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require foundation
+//= require cable
 //= require_tree .
 
 $(function(){ $(document).foundation(); });

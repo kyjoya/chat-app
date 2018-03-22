@@ -38,6 +38,10 @@ Rails.application.configure do
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
   # config.action_controller.asset_host = 'http://assets.example.com'
 
+  # Action Cable endpoint configuration
+  config.action_cable.url = 'wss://rails5reduxchat.herokuapp.com/cable'
+  config.action_cable.allowed_request_origins = [ 'https://rails5reduxchat.herokuapp.com', 'http://rails5reduxchat.herokuapp.com/', 'http://example.com', /http:\/\/example.*/ ]
+  
   # Specifies the header that your server uses for sending files.
   # config.action_dispatch.x_sendfile_header = 'X-Sendfile' # for Apache
   # config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect' # for NGINX
